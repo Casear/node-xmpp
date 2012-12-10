@@ -35,6 +35,7 @@ function connectThem(n, opts, cb) {
 const SIZES = [1, 5, 10, 20, 50, 100, 200, 500, 1000, 1500, 5000];
 // TODO: wait for 'close' after end()
 async.forEachSeries(SIZES, function(n, cb) {
+console.log('number:'+n);
     async.series([function(cb2) {
 	console.log("Connecting", n);
 	var t1 = getNow();

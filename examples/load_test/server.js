@@ -26,7 +26,7 @@ http.createServer(function(req, res) {
     } catch(e) {
 	console.error(e.stack||e);
     }
-}).listen(25280);
+}).listen(25280,'127.0.0.1');
 bosh.on('connect', function(svcl) {
     boshClients++;
     svcl.on('close', function() {
