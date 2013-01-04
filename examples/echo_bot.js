@@ -10,7 +10,11 @@ if (argv.length != 4) {
 }
 
 var cl = new xmpp.Client({ jid: argv[2],
-			   password: argv[3] });
+			   password: argv[3]
+
+
+    
+});
 cl.on('online',
       function() {
 	  cl.send(new xmpp.Element('presence', { }).
