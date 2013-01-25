@@ -11,6 +11,7 @@
 		 ,"faye-websocket": ">= 0.4.1"
 		 ,"blueimp-md5": ">= 1.0.0"
 		 ,"browserify": ">=1.10.4"
+		 ,"redis":"*"
 		 }
 ,"devDependencies": {"node-stringprep": ">=0.1.0"
 		    ,"mocha": ">=1.0.0"
